@@ -1,6 +1,6 @@
 import React from "react";
 import Background from "../assets/bg.jpg";
-import Testimg from "../assets/logo2.png";
+import MorrocoImg from "../assets/MorrocoImg.jpg";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Row from 'react-bootstrap/Row'
@@ -14,6 +14,14 @@ var sectionStyle = {
   height: "650px",
   backgroundImage: `url(${Background})`,
 };
+
+const styles = {
+  card: {
+    backgroundColor: '#B7E0F2',
+    borderRadius: 10,
+    width: '30vw',
+  }
+}
 
 const Body = () => {
   return (
@@ -45,9 +53,9 @@ const Body = () => {
                 </div>
               </div>
             </Col>
-            <Col className="pt-5 pl-3 ">
-              <Card className="mt-5" border="primary">
-                <Card.Img variant="top" src={Testimg} />
+            <Col className="pt-5 pl-4 ">
+              <Card className="mt-5 ml-5"  style={styles.card}>
+                <Card.Img variant="top" src={MorrocoImg} style={styles.card} />
                 <Card.Body>
                   <Container>
                     <Row md={8}>

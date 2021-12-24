@@ -6,7 +6,7 @@ import { faIdCard } from '@fortawesome/fontawesome-free-solid'
 
 const Navbar = () => {
   return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+      <nav className="navbar navbar-expand-lg navbar-light bg-white" style={{ padding: "3px" ,borderRadius:3 }}>
         <a className="navbar-brand" href="#/">
         <img width="80px" height="auto" className="img-responsive" src={logo}  alt="logo" />
         </a>
@@ -24,21 +24,21 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link h5" href="#/">
+              <a className="nav-link h5" href="/">
               Accueil  </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link h5" href="#/">
+              <a className="nav-link h5" href="/Creer">
                 Créer
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link h5" href="#/">
+              <a className="nav-link h5" href="/List">
                 List
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link h5" href="#/">
+              <a className="nav-link h5" href="/About">
                About
               </a>
             </li>
