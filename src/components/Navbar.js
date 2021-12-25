@@ -7,7 +7,7 @@ import { faIdCard } from '@fortawesome/fontawesome-free-solid'
 const Navbar = () => {
   return (
       <nav className="navbar navbar-expand-lg navbar-light bg-white" style={{ padding: "3px" ,borderRadius:3 }}>
-        <a className="navbar-brand" href="#/">
+        <a className="navbar-brand" href="/">
         <img width="80px" height="auto" className="img-responsive" src={logo}  alt="logo" />
         </a>
         <button
