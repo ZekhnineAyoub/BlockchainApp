@@ -19,7 +19,7 @@ const styles = {
   card: {
     backgroundColor: '#B7E0F2',
     borderRadius: 10,
-    width: '30vw',
+    width: '34vw',
   }
 }
 
@@ -53,7 +53,7 @@ const Body = () => {
                 </div>
               </div>
             </Col>
-            <Col className="pt-5 pl-4 ">
+            <Col className="pt-3 pl-4 ">
               <Card className="mt-5 ml-5"  style={styles.card}>
                 <Card.Img variant="top" src={MorrocoImg} style={styles.card} />
                 <Card.Body>
