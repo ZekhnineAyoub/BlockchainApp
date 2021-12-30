@@ -8,6 +8,8 @@ import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/fontawesome-free-solid'
+import { useNavigate } from "react-router-dom";
+
 
 var sectionStyle = {
   width: "100%",
@@ -24,6 +26,16 @@ const styles = {
 }
 
 const Body = () => {
+  const navigate = useNavigate();
+
+  const handleClick1=()=>{
+    navigate("/List");
+ }
+
+  const handleClick2=()=>{
+    navigate("/Creer");  
+  }
+
   return (
     <>
       <div style={sectionStyle}>
@@ -43,10 +55,10 @@ const Body = () => {
                     marketplace
                   </h5>
                   <div className="mb-2 pt-4">
-                    <Button variant="primary" size="lg">
+                    <Button variant="primary" size="lg"  onClick={handleClick1}>
                       Explore
                     </Button>{" "}
-                    <Button variant="success" size="lg">
+                    <Button variant="success" size="lg" onClick={handleClick2}>
                       Create
                     </Button>
                   </div>
