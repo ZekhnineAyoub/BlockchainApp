@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 
 var sectionStyle = {
   width: "100%",
-  height: "650px",
+  height: "800px",
   backgroundImage: `url(${Background})`,
 };
 
