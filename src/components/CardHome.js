@@ -4,17 +4,17 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 
 
 const style = { color: "blue", fontSize: "0.9em" };
 
 
 const CardHome = (props) => {
-  const navigate = useNavigate();
-  const handleClick = () => {
+ // const navigate = useNavigate();
+  /*const handleClick = () => {
     navigate("/CardDetails");
-  };
+  };*/
 
   return (
     <>
@@ -39,9 +39,9 @@ const CardHome = (props) => {
               className="float-md-right"
               size="sm"
               variant="primary"
-              onClick={handleClick}
+             // onClick={handleClick}
             >
-              More Details
+              Buy
             </Button>
           </Card.Body>
         </Card>
