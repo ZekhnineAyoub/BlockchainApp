@@ -45,7 +45,6 @@ contract Marketplace {
 
     function purshaseProduct(uint _id) public payable{
         //fetch the product 
-
         Product memory _product  = products[_id];
         //fetch the owner 
         address  payable _seller = _product.owner;
