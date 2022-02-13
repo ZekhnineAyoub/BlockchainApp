@@ -2,7 +2,6 @@ pragma solidity ^0.5.0;
 
 contract Marketplace {
     string public name;
-
     uint public productCount=0;
     mapping(uint => Product) public products;
 
@@ -38,7 +37,6 @@ contract Marketplace {
 
 
       productCount ++ ;
-
       products[productCount]= Product(productCount,_name,_price,msg.sender,false);
 
     }
