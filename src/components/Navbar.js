@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faIdCard } from '@fortawesome/fontawesome-free-solid'
 import {useState,useEffect} from 'react';
 import Web3 from 'web3';
+//import Marketplace from '../abis/Marketplace.json'
 
 const Navbar = () => {
 
@@ -22,18 +23,18 @@ const Navbar = () => {
     }
 
   }
-
-  const loadBlockchainData=async()=>{
+  const loadBlockchainAccount=async()=>{
     const web3 = window.web3;
     const accounts = await web3.eth.getAccounts();
     setAccount(accounts[0])
-    console.log(accounts[0]);
-
+    //const abi = Marketplace.abi
+    //const address = Marketplace.networks[5777].address
+    //const marketplace= new web3.eth.Contract(abi,address)
+    //console.log(marketplace);
   }
-
   useEffect(() => {
     loadWeb3();
-    loadBlockchainData();
+    loadBlockchainAccount();
   });
 
 

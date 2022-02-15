@@ -8,6 +8,7 @@ import List from "./components/List";
 import MoveInformation from "./components/MoveInformation";
 import React, {useEffect } from 'react';
 import Web3 from 'web3';
+import Marketplace from './abis/Marketplace.json'
 
 const App = () => {
 
@@ -24,10 +25,18 @@ const App = () => {
     }
 
   }
-
+  const loadBlockchainData=async()=>{
+    const web3 = window.web3;
+    const abi = Marketplace.abi
+    const address = Marketplace.networks[5777].address
+    const marketplace= new web3.eth.Contract(abi,address)
+    console.log(marketplace);
+  }
 
   useEffect(() => {
     loadWeb3();
+    loadBlockchainData()
+    //console.log(Marketplace.abi,Marketplace.networks[5777].address)
   });
 
   let routes = useRoutes([
